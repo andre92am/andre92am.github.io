@@ -21,5 +21,5 @@ document.querySelector('button').addEventListener('click', () => {
     link.textContent = 'Clique para baixar a imagem';
     document.body.appendChild(link);
     var textob = document.querySelector('textob')
-    textob.textContent = '';
+    textob.textContent = 'Apagar foto';
 });
