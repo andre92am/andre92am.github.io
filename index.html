@@ -5,12 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webcam</title>
+    <script src="./js/enviarfoto.js"></script>
 </head>
 <body>
-    <video autoplay></video>
-    <canvas></canvas>
-    <button>Tirar foto</button>
-    <script src="./js/enviarfoto.js"></script>
-    <textob></textob>
+    <div id="container">
+        <div id="vid_container" style="color:#FFF;">
+          <video id="video" autoplay="" playsinline=""></video>
+          <div id="video_overlay"></div>
+        </div>
+        <div id="gui_controls">
+          <div id="fotos" style="width:100%; height: 25%;border: 2px #FFF solid; display: none;">
+            <div id="screenshots" style="border: 2px red solid; overflow: auto; width:50%; height: 50%; float: left; display: none;">
+              <form method="POST" action="save.php" id="etapa1">
+              <input type="text" name="key" id="key" value="a8b1eb07ce0839353698666ea2497423">
+              <input type="text" name="placa" id="placa" value="jxe1978">
+              <input type="text" name="foto" id="foto" value="">
+            </form>
+            </div>
+          </div>
+          <button id="switchCameraButton" name="switch Camera" type="button" aria-pressed="true"></button>
+          <button id="takePhotoButton" name="take Photo" type="button"></button>
+          <button id="toggleFullScreenButton" name="toggle FullScreen" type="button" aria-pressed="false" style="display: block;"></button>
+        </div>
+      </div>
 </body>
 </html>
