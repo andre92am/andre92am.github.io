@@ -15,7 +15,7 @@ document.querySelector('button').addEventListener('click', () => {
     canvas.width = video.videoWidth;
     var context = canvas.getContext('2d');
     context.drawImage(video, 0, 0);
-    var link = document.createElement('a');
+    var link = document.createElement('textob');
     link.download = 'foto.png';
     link.href = canvas.toDataURL();
     link.textContent = 'Clique para baixar a imagem';
