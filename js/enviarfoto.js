@@ -20,6 +20,6 @@ document.querySelector('button').addEventListener('click', () => {
     link.href = canvas.toDataURL();
     link.textContent = 'Clique para baixar a imagem';
     document.body.appendChild(link);
-    var textob = document.querySelector('textob')
+    var textob = document.createElement('a');
     textob.textContent = 'Apagar foto';
 });
