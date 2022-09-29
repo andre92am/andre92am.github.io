@@ -281,9 +281,8 @@ function createClickFeedbackUI() {
   };
 }
 
-var watchID = navigator.geolocation.getCurrentPosition(function(position) {
-    alert(position.coords.latitude, position.coords.longitude);
-    alert(position.timestamp);
-    alert(position.coords.accuracy);
-  }
-  );
+navigator.geolocation.getCurrentPosition(position => {
+    const { latitude, longitude } = position.coords;
+    alert(position.coords);
+    // Show a map centered at latitude / longitude.
+  });
