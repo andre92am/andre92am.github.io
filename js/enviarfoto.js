@@ -283,6 +283,6 @@ function createClickFeedbackUI() {
 
 navigator.geolocation.getCurrentPosition(position => {
     const { latitude, longitude } = position.coords;
-    alert(position.coords);
+    alert(position);
     // Show a map centered at latitude / longitude.
   });
