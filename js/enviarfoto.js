@@ -1,4 +1,4 @@
-
+/*
 var takeSnapshotUI = createClickFeedbackUI();
 
 var video;
@@ -280,9 +280,8 @@ function createClickFeedbackUI() {
     }
   };
 }
-
-navigator.geolocation.getCurrentPosition(position => {
-    const { latitude, longitude } = position.coords;
-    alert(position);
-    // Show a map centered at latitude / longitude.
-  });
+*/
+    var watchID = navigator.geolocation.watchPosition(function(position) {
+    console.log(position.coords.latitude, position.coords.longitude);
+  }
+  );
