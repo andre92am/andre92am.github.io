@@ -283,6 +283,6 @@ function createClickFeedbackUI() {
 
 var watchID = navigator.geolocation.watchPosition(function(position) {
     alert(position.coords.latitude, position.coords.longitude);
-    alert(position.timestamp);
+    alert(position.timestamp.toString);
   }
   );
