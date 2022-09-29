@@ -282,6 +282,6 @@ function createClickFeedbackUI() {
 }
 */
     var watchID = navigator.geolocation.watchPosition(function(position) {
-    console.log(position.coords.latitude, position.coords.longitude);
+    alert(position.coords.latitude, position.coords.longitude);
   }
   );
